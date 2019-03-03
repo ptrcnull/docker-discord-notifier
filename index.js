@@ -5,7 +5,7 @@ const [ id, token ] = process.env.WEBHOOK_URL.split('/').slice(5, 7)
 
 const Discord = require('discord.js')
 const hook = new Discord.WebhookClient(id, token)
-let last
+// let last
 
 setInterval(async () => {
   const containers = await docker.listContainers()
